@@ -1,0 +1,14 @@
+{
+    "name": "GAuthAutofill",
+    "version": "1.0.0",
+    "manifest_version": 2,
+    "description": "GoogleAuthenticator自動入力",
+    "content_scripts": [{
+        "matches": ["https://auth.omu.ac.jp/AuthServer/SMAuthenticator"],
+        "js": [
+            "js/jsrsasign-all-min.js",
+            "js/totp.js",
+            "js/autofill.js"
+        ]
+        }]
+    }
